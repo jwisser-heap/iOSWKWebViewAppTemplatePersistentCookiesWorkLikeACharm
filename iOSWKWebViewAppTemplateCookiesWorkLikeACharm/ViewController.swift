@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         //even if your app is pink you still should set the color below to match perfectly with your app's pink color shade
         //Keep in mind that all ranges for red, green blue and alpha are 0-1 with decimals
         
-        statusbarView.backgroundColor = UIColor(red: 0.93, green: 0, blue: 1, alpha: 1)
+        statusbarView.backgroundColor = UIColor(red: 0.19, green: 0.85, blue: 0.57, alpha: 1.00)
         view.addSubview(statusbarView)
         
         //Setting the correct sizes and positioning for our custom color status bar background
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         //So keep in mind that your remote website should look and feel like iOS app (as much as possible),
         //especially if you are planning to distribute it via App Store and expect to successfully pass Apple's App Review
         
-        if let url = URL(string: "https://google.com") {
+        if let url = URL(string: "https://jwisser-heap.github.io/Testr/") {
             let request = URLRequest(url: url)
             webView.load(request)
             
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
             //
             
             //Code Segment START - Prevent user from using pinch to zoom gesture, double tap to zoom webview
-            let source: String = "var meta = document.createElement('meta');" +
+           let source: String = "var meta = document.createElement('meta');" +
                 "meta.name = 'viewport';" +
                 "meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';" +
                 "var head = document.getElementsByTagName('head')[0];" +
@@ -248,7 +248,7 @@ extension WKWebView {
 //So, keep in mind that your remote website should look and feel like iOS app (as much as possible),
 //especially if you are planning to distribute it via App Store and expect to successfully pass Apple's App Review
 
-let url = URL(string: "https://google.com")!
+let url = URL(string: "https://jwisser-heap.github.io/Testr/")!
 
 extension ViewController: WKUIDelegate, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
